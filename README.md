@@ -15,13 +15,13 @@ Using Python and FastAPI
 2. trade_entry_system_database.py - connected to the SQL database (insert and recieve trades)
 3. Main.py - RestAPI endpoints
 
-## Database
-
-PostgresSQL database
-
 ### Validation
 
 There were several conditions that a trade had to satisfy before it could be admitted to the repository:
 1. Quantity is an integer between 1 and 100000
 2. Price is within a tolerance of 0.5 from the previous market price
 3. Counterparty is allowed to trade the product
+
+## Database
+
+PostgresSQL database
