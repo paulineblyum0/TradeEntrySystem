@@ -13,12 +13,12 @@ const Blotter = () => {
         counterparty: "",
     });
 
-    // Simulated trades data (Replace this with API data)
+    // Simulated trades data 
     useEffect(() => {
         const fetchTrades = async () => {
             try {
                 const response = await axios.get("http://localhost:8000/blotter");
-                setTrades(response.data.trades); // Assuming the API returns { trades: [...] }
+                setTrades(response.data.trades); 
             } catch (error) {
                 console.error("Error fetching trades:", error.response?.data || error.message);
                 alert("Failed to fetch trades. Please try again.");
